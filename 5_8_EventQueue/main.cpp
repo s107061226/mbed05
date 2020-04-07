@@ -1,8 +1,8 @@
 #include "mbed.h"
 
+EventQueue queue;       // set a queue
+
 int main() {
-    // creates a queue with the default size
-    EventQueue queue;
 
     // events are simple callbacks
     queue.call(printf, "called immediately\r\n");
